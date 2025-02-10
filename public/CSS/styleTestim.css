@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+*{
+    margin: 0.0875px;
+    box-sizing: border-box; /* Añadir esto para manejar el padding y el border */
+}
+
+/*Contenedor principal*/
+.Contenedor5{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(243, 211, 200);
+    min-width: 270px;
+}
+/*Todo el encabezado*/
+.Encabezado5{
+    z-index: 1;
+    background-color: rgb(194, 101, 212);
+    align-items: center;
+    position: fixed;
+    grid-area: 1/1/2/5;
+    width: 100%;
+    opacity: 0.89;
+    display: flex;
+    flex-direction: row;
+    opacity: 500%;
+}
+.Logo{
+    justify-content: center;
+    flex-grow: 0.05;
+}
+.Titulo{
+    justify-content:flex-start;
+    flex-grow: 0.65; 
+}
+#LoudVoice{
+    font-size: 35px;
+    font-family: "Indie Flower", cursive;
+    color:black;  
+}
+.Contacto{
+    display: flex;
+    justify-content:center;
+    flex-grow: 0.15;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 70px;
+}
+.logos button{
+    background-color: rgb(194, 101, 212);
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    scale: 2;
+}
+.PExpand{
+    flex-grow: 0.1;
+}
+.logos:hover{
+    transition: 0.3s;
+    transform: scale(0.71);
+}
+.Inicio-Busqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: 0.2;
+}
+.IB{
+    justify-content: center;
+    flex-grow: 0.3;
+}
+#imgInicioSesion{
+    cursor: pointer;
+}
+#imgInicioSesion:active{
+    transition: 0.3s;
+    transform: scale(0.6);
+}
+@media screen and (max-width: 500px){
+    .imgP{
+        max-width: 50%;
+        max-height: 80%;
+    }
+    .imgP img{
+        width: 100%;
+        height:100%;
+    }
+    #LoudVoice{
+        scale: 0.85;
+    }
+}
+/*Primer Panel*/
+
+.PrimerPanel5{
+    grid-area: 2/1/3/5;
+    margin-top: 130px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+    font-family: "Patrick Hand", cursive;
+    
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+#titulo15{
+    margin-bottom: 10px;
+    font-size: 1.9rem;
+}
+.Informacion51{
+    display: flex;
+    text-align: center;
+}
+.Informacion51 div{
+    margin: 10px;
+    border: solid 2px rgb(199, 83, 83);
+    border-radius: 15px;
+    background-color: rgb(0, 153, 255);
+
+}
+.Informacion51 div p{
+    padding: 5px;
+    color: white;
+    text-align: justify;
+    overflow-wrap: break-word;
+
+}
+@media screen and (max-width: 700px){
+    .Informacion51{
+        flex-wrap: wrap;
+    }
+}
+
+/*Segundo Panel*/
+.SegundoPanel5{
+    grid-area: 3/1/4/5;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: rgb(232, 209, 243);
+    font-family: "Patrick Hand", cursive;
+}
+#BtnMas51{
+    background-color: rgb(232, 209, 243);
+    border: none;
+    cursor: pointer;
+    scale: 1.3;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 100%;
+}
+#BtnMas51:hover{
+    animation: ladeo 0.1s infinite alternate;
+    scale: 2;
+}
+#Informacion52{
+    display: none;
+}
+#BtnMenos51{
+    display: none;
+    background-color: rgb(232, 209, 243);
+    border: none;
+    cursor: pointer;
+    scale: 1.3;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 100%;
+}
+#BtnMenos51:hover{
+    animation: ladeo 0.1s infinite alternate;
+    scale: 2;
+}
+@keyframes ladeo {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+/*Tercer Panel*/
+.TercerPanel5{
+    grid-area: 4/1/5/5;
+    display: flex;
+    padding: 40px;
+    font-family: "Patrick Hand", cursive;
+    flex-wrap: nowrap;
+}
+.Informacion53{
+    max-width: 50%;
+}
+.img51{
+    display: flex;
+    max-width: 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+#imgD{
+    max-width: 100%;
+}
+@media screen and (max-width: 700px){
+    .TercerPanel5{
+        flex-wrap: wrap;
+    }
+    .Informacion53{
+        max-width: 100%;
+    }
+    .img51{
+        max-width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+
+
+/*Cuarto Panel*/
+.CuartoPanel5{
+    grid-area: 5/1/6/5;
+    background-color: rgb(232, 209, 243);
+    font-family: "Patrick Hand", cursive;
+}
+.CuartoPanel5 fieldset{
+    box-shadow: 15 px15px 15px black;
+    max-width: 100%;
+    max-height: 100%;
+    border: solid 3px aqua
+}
+.Informacion54{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.Informacion54 div{
+    margin: 10px;
+    padding: 5px;
+}
+.Informacion54 div button{
+    border: none;
+    background-color: rgb(232, 209, 243);
+    font-family: "Patrick Hand", cursive;
+    font-size: 1.1rem;
+}
+.Informacion54 div button:hover{
+    border-bottom: solid 1px red;
+}
+.Informacion54 div button:active{
+    scale: 0.7;
+}
+.SP p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.SP.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.PC p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.PC.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.RL p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.RL.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.RaS p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.RaS.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.InD p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.InD.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.RR p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.RR.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+#titulo45{
+    padding: 40px;
+    text-align: center;
+
+}
+.Texto51{
+    margin-right: 30%;
+    margin-left: 30%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+/*Pie de pag*/
+.PieDePagina{
+    grid-area: 9/1/10/5;
+    display: flex;
+    background-color: blueviolet;
+}
+.imgP img{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-top: 0;
+    width: 220px;
+    height: 220px;
+}
+.Fi{
+    margin: 60px;
+    font-family: "Patrick Hand", cursive;
+}
+
+@media screen and (max-width: 500px){
+    .Titulo{
+        flex-grow: 0.25; 
+    }
+}
+@media screen and (max-width: 500px){
+    #LoudVoice{
+        word-break: break-all;
+    }
+    .Logo{
+        flex-wrap: 0;
+    }
+}
+
+
+.tooltip-img {
+    display: none;
+    position: absolute;
+    top: 30px; /* Ajusta según sea necesario */
+    left: 100px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS1{
+    width: 200px;
+    height: 200px;
+}
+.logos button {
+    z-index: 1; /* Asegura que los botones estén debajo de la imagen */
+    position: relative; /* Necesario para que el z-index funcione correctamente */
+}
+.logos{
+    z-index: 1;
+}
+@media (max-width: 800px){
+    .tooltip-img {
+        display: none;
+    }
+    .tooltip-img2 {
+        display: none;
+    }
+}
+.tooltip-img2 {
+    display: none;
+    position: absolute;
+    top: 25px; /* Ajusta según sea necesario */
+    left: 110px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS4{
+    width: 250px;
+    height: 250px;
+}
+
+@media screen and (max-width: 450px) {
+    .Fi p {
+        margin: 4px 0;
+        color: #333;
+        font-size: 1.15rem;
+    }
+    .EnlacesUtiles a {
+        margin: 0 8px;
+        font-size: 1rem;
+    }
+    .PieDePagina p {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+    .PieDePagina strong {
+        font-weight: bold;
+        color: white;
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+*{
+    margin: 0.0875px;
+    box-sizing: border-box; /* Añadir esto para manejar el padding y el border */
+}
+body{
+    background: #291223;
+}
+.ContenedorP{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+    min-width: 270px;  
+}
+/*Encabezado*/
+.EncabezadoP{
+    grid-area: 1/1/2/5;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background: #A4468E;
+    width: 100%;
+}
+.Logo{
+    margin: 10px;
+    flex-grow: 0.1;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.TituloB{
+    font-family: Mogra;
+    font-size: 1.5rem;
+    flex-grow: 0.7;
+    margin: 5px;
+}
+.BtnCS{
+    flex-grow: 0.2;
+    text-align: end;
+    margin: 40px;
+}
+.BtnCS button{
+    width: 95%;
+    height: 35px;
+    background-color: #46a45c;
+    border-radius: 15px;
+    color: white;
+    font-size: medium;
+}
+.BtnCS button:hover{
+    cursor: pointer;
+    background-color: aqua;
+    color: black;
+}
+@media screen and (max-width: 500px){
+    .TituloB{
+        font-size: 0.98rem;
+        flex-grow: 0.5;
+    }
+    .BtnCS{
+        margin: 2%;
+        flex-grow: 0.4;
+    }
+    .BtnCS button{
+        height: 40px;
+    }
+}
+
+/*Panel botones*/
+.PanelPrincipal{
+    grid-area: 2/1/5/5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family:consolas;
+    margin-top: 5%;
+}
+/*Primer Boton*/
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-top: 30px;
+    width: 70%;
+    text-align: center;
+    word-break: break-all;
+}
+.btn-neon:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+    cursor: pointer;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#a945c7);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/*Segundo Boton*/
+.btn-neon2{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-top: 50px;
+    width: 70%;
+    text-align: center;
+    word-break: break-all;
+}
+.btn-neon2:hover{
+    background: #ea6a0e;
+    box-shadow: 0 0 10px #ea6a0e, 0 0 40px #ea6a0e, 0 0 80px #ea6a0e;
+    transition-delay: 1s;
+    cursor: pointer;
+ }
+.btn-neon2 span{
+    position: absolute;
+    display: block;
+}
+#span5{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#ea6a0e);
+ }
+ .btn-neon2:hover #span5{
+    left: 100%;
+    transition: 1s;
+}
+ #span7{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#ea6a0e);
+}
+ .btn-neon2:hover #span7{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span6{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#ea6a0e);
+}
+.btn-neon2:hover #span6{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span8{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#ea6a0e);
+}
+.btn-neon2:hover #span8{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/*Tercer Boton*/
+.btn-neon3{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-top: 50px;
+    width: 70%;
+    text-align: center;
+    word-break: break-all;
+}
+.btn-neon3:hover{
+    background: #0aeb2c;
+    box-shadow: 0 0 10px #0aeb2c, 0 0 40px #0aeb2c, 0 0 80px #0aeb2c;
+    transition-delay: 1s;
+    cursor: pointer;
+ }
+.btn-neon3 span{
+    position: absolute;
+    display: block;
+}
+#span9{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#0aeb2c);
+ }
+ .btn-neon3:hover #span9{
+    left: 100%;
+    transition: 1s;
+}
+ #span11{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#0aeb2c);
+}
+ .btn-neon3:hover #span11{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span10{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#0aeb2c);
+}
+.btn-neon3:hover #span10{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span12{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#0aeb2c);
+}
+.btn-neon3:hover #span12{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/*Mensajes superiores*/
+.ImgMsj1{
+    position: absolute;
+    z-index: 2;
+    transform: translateX(50%);
+    top: 20%; /* Ajusta según sea necesario */
+    right: 20%; /* Ajusta según sea necesario */
+}
+
+.ImgMsj2{
+    position: absolute;
+    z-index: 2;
+    transform: translateX(50%);
+    top: 39%; /* Ajusta según sea necesario */
+    right: 19%; /* Ajusta según sea necesario */
+}
+
+.ImgMsj3{
+    position: absolute;
+    z-index: 2;
+    transform: translateX(50%);
+    top: 58%; /* Ajusta según sea necesario */
+    right: 19%; /* Ajusta según sea necesario */
+}
+@media screen and (max-width: 600px){
+    .ImgMsj1{
+        display: none;
+    }
+    .btn-neon:hover + .ImgMsj1{
+        display: block;
+    }
+    .ImgMsj2{
+        display: none;
+        right: 17%;
+    }
+    .btn-neon2:hover + .ImgMsj2{
+        display: block;
+    }
+    .ImgMsj3{
+        display: none;
+        right: 17%;
+    }
+    .btn-neon3:hover + .ImgMsj3{
+        display: block;
+    }
+}

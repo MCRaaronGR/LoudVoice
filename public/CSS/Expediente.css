@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0.0875px;
+    box-sizing: border-box; /* Añadir esto para manejar el padding y el border */
+}
+
+/*Contenedor principal*/
+.Contenedor2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(243, 211, 200);
+    min-width: 270px;
+}
+/*Todo el encabezado*/
+/*Encabezado*/
+.EncabezadoI{
+    z-index: 1;
+    background-color: #c679b4;
+    align-items: center;
+    grid-area: 1/1/2/5;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    box-shadow: 5px 5px 5px black;
+}
+.Logo{
+    flex-grow: 0.05;
+    margin-right: 30px;
+}
+
+.TituloB{
+    flex-grow: 0.5;
+    font-family: 'Margarine';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+#BVS{
+    margin-right: 10px;
+}
+#NombreUs{
+    margin-left: 10px;
+}
+.Contacto{
+    flex-grow: 0.3;
+    display: flex;
+    justify-content:center;
+}
+.Contacto button{
+    background-color: #c679b4;
+    border-radius: 5px;
+    width: 25%;
+    margin: 5px;
+    height: 40px;
+    color: white;
+}
+.Contacto button:hover{
+    background-color:#c679b4;
+    color: black;
+    border-radius: 5px;
+    scale: 101%;
+    cursor: pointer;
+}
+.PExpand{
+    display: flex;
+    flex-direction: wrap;
+    flex-grow: 0.1;
+}
+@media screen and (max-width: 800px) {
+    .TituloB{
+        flex-wrap: wrap;
+        flex-grow: 0.7;
+        font-size: 1.5rem;
+    }
+    .Contacto{
+        flex-grow: 1;
+        margin-left: 70px;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .TituloB{
+        flex-wrap: wrap;
+        flex-grow: 0.6;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .TituloB{
+        flex-wrap: wrap;
+        flex-grow: 0.5;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .TituloB{
+        flex-wrap: wrap;
+        font-size: 1.1rem;
+        flex-grow: 0.4;
+    }
+    #BVS{
+        margin-right: 0px;
+    }
+    #NombreUs{
+        margin-left: 0px;
+        color: white;
+    }
+    .Contacto{
+        flex-grow: 0;
+        margin-right: 5%;
+        flex-direction: column;
+    }
+    .Contacto button{
+        height: 40px;
+        width: 100%;
+    }
+    .Contacto button:hover{
+        background-color:#c679b4;
+        color: black;
+        border-radius: 15px;
+        height: 40px;
+        width: 100%;
+        cursor: pointer;
+    }
+    .Logo{
+        flex-grow: 0.;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .TituloB{
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+        flex-grow: 0.2;
+    }
+    .PExpand{
+        padding-right: 40px;
+    }
+}
+
+/*Test1*/
+.Test1{
+    grid-area: 2/1/3/5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 90px;
+}
+.MensajeBienvenida{
+    grid-area: 2/1/3/3;
+    width: 50%;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    font-family: kalam, cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    align-content: center;
+    justify-content: center;
+}
+.imagenBienvenida{
+    width: 50%;
+    padding: 50px;
+}
+.imagenBienvenida img{
+    width: 90%;
+    height: 90%;
+}
+@media screen and (max-width: 800px) {
+    .Test1{
+        flex-wrap: wrap;
+    }
+    .MensajeBienvenida{
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    .MensajeBienvenida{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .imagenBienvenida{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .Test1{
+        flex-wrap: wrap;
+    }
+    .MensajeBienvenida{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    .MensajeBienvenida{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .imagenBienvenida{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*Segundo Panel*/
+.SegundoPanelEx{
+    grid-area: 3/1/4/5;
+    display: flex;
+    flex-direction: column;
+    font-family: kalam, cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.InfoExp{
+    padding-left: 50px;
+}
+.InfoExp h3{
+    font-size: 2rem;
+}
+.InfoExp p{
+    font-size: 1.4rem;
+}
+.EspacioExperiencia{
+    padding-top: 10px;
+    padding-left: 50px;
+}
+.EspacioExperiencia h3{
+    font-size: 2rem;
+}
+.EspacioExperiencia p{
+    font-size: 1.4rem;
+}
+.EspacioExperiencia div textarea{
+    width: 100%;
+    height: 500px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.BtnFuncion{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.BtnFuncion button{
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 20%;
+    padding: 5px;
+    height: auto;
+    background-color: #c679b4;
+    border: #c679b4 1px solid;
+    border-radius: 5px;
+    font-size: 1.12rem;
+    font-family: kalam, cursive;
+}
+.BtnFuncion button:hover{
+    font-style: oblique;
+    cursor: pointer;
+    border: black 1px solid;
+}
+#BtnGuardar{
+    margin-right: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 20%;
+    padding: 5px;
+    height: auto;
+    background-color: #c679b4;
+    border: #c679b4 1px solid;
+    border-radius: 5px;
+    font-size: 1.12rem;
+    font-family: kalam, cursive;
+}
+#BtnGuardar:hover{
+    font-style: oblique;
+    cursor: pointer;
+    border: black 1px solid;
+}
+#experienciaDiv{
+    padding-right: 50px;
+}
+#experienciaTextarea{
+    background-color: rgb(243, 211, 200);
+}
+@media screen and (max-width: 700px){
+    #Titulo2{
+        font-size: 1.5rem;
+    }
+    .InfoExp p{
+        font-size: 1.2rem;
+    }
+    .EspacioExperiencia h3{
+        font-size: 1.5rem;
+    }
+    .EspacioExperiencia p{
+        font-size: 1.2rem;
+    }
+    .BtnFuncion button{
+        width: 25%;
+    }
+}
+@media screen and (max-width: 450px) {
+    #Titulo2{
+        font-size: 1.3rem;
+    }
+    .InfoExp p{
+        font-size: 1rem;
+    }
+    .EspacioExperiencia h3{
+        font-size: 1.3rem;
+    }
+    .EspacioExperiencia p{
+        font-size: 1rem;
+    }
+    .BtnFuncion{
+       display: flex;
+       flex-direction: column;
+    }
+    .BtnFuncion button{
+        width: 75%;
+    }
+}
+/*TercerPanel*/
+.TercerPanelExp{
+    grid-area: 4/1/5/5;
+    font-family: kalam, cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.AyudaExp{
+    margin-top: 50px;
+    padding-left: 50px;
+}
+.AyudaExp h3{
+    font-size: 2rem;
+}
+.AyudaExp p{
+    font-size: 1.4rem;
+}
+.ContacANDdesc{
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.ContacANDdesc div h3{
+    font-size: 2.1rem;
+}
+.ContacANDdesc div p{
+    font-size: 1.4rem;
+}
+#AnexoInfo{
+    font-size: 0.7rem;
+}
+#generate-pdf-button{
+    font-size: 1.4rem;
+    border: none;
+    background-color: rgb(243, 211, 200);
+    font-family: kalam, cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#generate-pdf-button:hover{
+    cursor: pointer;
+    scale: 90%;
+    color: #c679b4;
+}
+.DescargaExp{
+    max-width: 50%;
+}
+.ContactoExp{
+    max-width: 50%;
+}
+@media screen and (max-width: 700px){
+    .AyudaExp{
+        padding-right: 10px;
+    }
+    .AyudaExp h3{
+        font-size: 1.5rem;
+    }
+    .AyudaExp p{
+        font-size: 1.2rem;
+    }
+    .ContacANDdesc{
+        flex-wrap: wrap;
+    }
+    .DescargaExp{
+        max-width: 100%;
+    }
+    #TituloExpe{
+        font-size: 1.5rem;
+    }
+    .DescargaExp p{
+        font-size: 1.2rem;
+    }
+    #AnexoInfo{
+        font-size: 0.6rem;
+    }
+    .ContactoExp{
+        max-width: 100%;
+    }
+    #TituloContac{
+        font-size: 1.5rem;
+    }
+    #ContacsAyu{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .AyudaExp h3{
+        font-size: 1.3rem;
+    }
+    .AyudaExp p{
+        font-size: 1rem;
+    }
+    #TituloExpe{
+        font-size: 1.3rem;
+    }
+    .DescargaExp p{
+        font-size: 1rem;
+    }
+    #AnexoInfo{
+        font-size: 0.5rem;
+    }
+    #TituloContac{
+        font-size: 1.3rem;
+    }
+    #ContacsAyu{
+        font-size: 0.9rem;
+    }
+    .ContactoExp{
+        text-wrap: wrap;
+    }
+    #BtnGuardar{
+        width: 40%;
+    }
+}
+
+
+/*Pie de Pagina*/
+.PieDePaginaUS{
+    grid-area: 5/1/6/5;
+    display: flex;
+    background-color: #c679b4;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+.PieDePagina .imgP img {
+    margin-bottom: 15px;
+}
+.Fi p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-weight: 700;
+}
+.EnlacesUtiles a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+.EnlacesUtiles a:hover {
+    text-decoration: underline;
+}
+.PieDePagina p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.PieDePagina strong {
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 500px){
+    .Titulo{
+        flex-grow: 0.25; 
+    }
+    #LoudVoice{
+        scale: 0.85;
+    }
+}
+@media screen and (max-width: 500px){
+    .Titulo{
+        flex-grow: 0; 
+    }
+    #LoudVoice{
+        scale: 0.70;
+        word-break: break-all;
+    }
+    .Logo{
+        scale: 0.7;
+        flex-wrap: 0;
+    }
+}
+
+.swal2-input-column {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.tooltip-img {
+    display: none;
+    position: absolute;
+    top: 30px; /* Ajusta según sea necesario */
+    left: 100px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS1{
+    width: 200px;
+    height: 200px;
+}
+.logos button {
+    z-index: 1; /* Asegura que los botones estén debajo de la imagen */
+    position: relative; /* Necesario para que el z-index funcione correctamente */
+}
+.logos{
+    z-index: 1;
+}
+@media (max-width: 800px){
+    .tooltip-img {
+        display: none;
+    }
+    .tooltip-img2 {
+        display: none;
+    }
+}
+.tooltip-img2 {
+    display: none;
+    position: absolute;
+    top: 25px; /* Ajusta según sea necesario */
+    left: 110px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS4{
+    width: 250px;
+    height: 250px;
+}
+
+.button-disabled {
+    opacity: 0.6;
+}
+.button-disabled:hover {
+    cursor: not-allowed;
+}
+
+
+@media screen and (max-width: 450px) {
+    .Fi p {
+        margin: 4px 0;
+        color: #333;
+        font-size: 1.15rem;
+    }
+    .EnlacesUtiles a {
+        margin: 0 8px;
+        font-size: 1rem;
+    }
+    .PieDePagina p {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+    .PieDePagina strong {
+        font-weight: bold;
+        color: white;
+        font-size: 0.9rem;
+    }
+}

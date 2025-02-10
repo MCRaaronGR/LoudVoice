@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0.0875px;
+    box-sizing: border-box; /* Añadir esto para manejar el padding y el border */
+}
+
+/*Contenedor principal*/
+.Contenedor2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(243, 211, 200);
+    min-width: 270px;
+}
+/*Todo el encabezado*/
+.Encabezado2{
+    z-index: 1;
+    background-color: rgb(194, 101, 212);
+    align-items: center;
+    min-width: 200px;
+    position: fixed;
+    grid-area: 1/1/2/5;
+    width: 100%;
+    opacity: 0.89;
+    display: flex;
+    flex-direction: row;
+    opacity: 500%;
+}
+.Logo{
+    justify-content: center;
+    flex-grow: 0.05;
+}
+.Titulo{
+    justify-content:flex-start;
+    flex-grow: 0.65; 
+}
+#LoudVoice{
+    font-size: 35px;
+    font-family: "Indie Flower", cursive;
+    color:black;  
+}
+.Contacto{
+    display: flex;
+    justify-content:center;
+    flex-grow: 0.15;
+    position: relative;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 70px;
+}
+.logos button{
+    background-color: rgb(194, 101, 212);
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    scale: 2;
+}
+.logos:hover{
+    transition: 0.3s;
+    transform: scale(0.71);
+}
+.Inicio-Busqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: 0.2;
+}
+.IB{
+    justify-content: center;
+    flex-grow: 0.3;
+}
+#imgInicioSesion{
+    cursor: pointer;
+}
+#imgInicioSesion:active{
+    transition: 0.3s;
+    transform: scale(0.6);
+}
+@media screen and (max-width: 500px){
+    .imgP{
+        max-width: 50%;
+        max-height: 80%;
+    }
+    .imgP img{
+        width: 100%;
+        height:100%;
+    }
+    #LoudVoice{
+        scale: 0.85;
+    }
+}
+/*Test1*/
+.Test1{
+    grid-area: 2/1/3/5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 90px;
+}
+.MensajeBienvenida{
+    grid-area: 2/1/3/3;
+    width: 50%;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    font-family: kalam, cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    align-content: center;
+    justify-content: center;
+}
+.imagenBienvenida{
+    display: flex;
+    width: 50%;
+    padding: 50px;
+}
+.imagenBienvenida img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 700px){
+    .Test1{
+        flex-wrap: wrap;
+    }
+    .MensajeBienvenida{
+        width: 100%;
+        margin-right: 10px;
+    }
+    .imagenBienvenida{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+#MsjB1{
+    margin-bottom: 20px;
+}
+#StarTest{
+    width: 230px;
+    height: 30px;
+    font-family: cursive;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.Boton{
+    background-image: linear-gradient(
+        50deg,
+        #D35400,
+        #AF7AC5 ,
+        #00DDFF
+    );
+    text-decoration: none;
+    color: black
+}
+.Efecto1{
+    display: inline-block;
+    transform: perspective(1px) translate(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+.Efecto1::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #131313;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.Efecto1:hover{
+    color: white;
+}
+.Efecto1:hover:before{
+    transform: scaleX(1);
+    transition-timing-function: 
+    cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/*PieDePagina*/
+.PieDePagina{
+    grid-area: 9/1/10/5;
+    display: flex;
+    background-color: blueviolet;
+}
+.imgP img{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-top: 0;
+    width: 220px;
+    height: 220px;
+}
+.Fi{
+    margin: 60px;
+    font-family: cursive;
+}
+
+@media screen and (max-width: 500px){
+    .Titulo{
+        flex-grow: 0.25; 
+    }
+    #LoudVoice{
+        scale: 0.85;
+    }
+}
+@media screen and (max-width: 500px){
+    .Titulo{
+        flex-grow: 0; 
+    }
+    #LoudVoice{
+        scale: 0.70;
+        word-break: break-all;
+    }
+    .Logo{
+        scale: 0.7;
+        flex-wrap: 0;
+    }
+}
+
+.swal2-input-column {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.tooltip-img {
+    display: none;
+    position: absolute;
+    top: 30px; /* Ajusta según sea necesario */
+    left: 100px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS1{
+    width: 200px;
+    height: 200px;
+}
+.logos button {
+    z-index: 1; /* Asegura que los botones estén debajo de la imagen */
+    position: relative; /* Necesario para que el z-index funcione correctamente */
+}
+.logos{
+    z-index: 1;
+}
+@media (max-width: 800px){
+    .tooltip-img {
+        display: none;
+    }
+    .tooltip-img2 {
+        display: none;
+    }
+}
+.tooltip-img2 {
+    display: none;
+    position: absolute;
+    top: 25px; /* Ajusta según sea necesario */
+    left: 110px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS4{
+    width: 250px;
+    height: 250px;
+}
+
+.button-disabled:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+.BtnAM{
+    width: 5px;
+    height: 2px;
+    margin-top: 18px;
+    margin-left: 15px;
+    border: 0;
+    background-color:  #c6798d;
+    font-size: 2rem;
+    padding-bottom: 40px;
+    
+}
+.BtnCM{
+    width: 5x;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border: 0;
+    background-color: #c6798d;
+    font-size: 2rem;
+}
+.BtnAM, .BtnCM{
+    display: none;
+}
+
+@media screen and (max-width: 950px) {
+    .BtnCM, .BtnAM{
+        display: block;
+        cursor: pointer;
+    }
+    .Contacto{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .Contacto{
+        position: absolute;
+        gap: 1rem;
+        flex-direction: column;
+   
+        top: 0;
+        right: 0;
+        bottom: 20;
+        align-items: end;
+        background-color: #c6798d;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }  
+    .Contacto.visible{
+        opacity: 1;
+        visibility: visible;
+        padding: 40px;
+        border-bottom-left-radius: 5px;
+        align-items: center;
+        align-content: space-between;
+        justify-content: center;
+        justify-items: center;
+    }
+}

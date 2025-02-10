@@ -1,0 +1,15 @@
+.MapaM path{
+    fill: #3D1A35;
+    stroke: #C679B4;
+    stroke-width: 3px;
+}
+.MapaM path:hover{
+    fill: white;
+    stroke: black;
+    cursor: pointer;
+}
+.MapaM path:active{
+    transition: 0.1s;
+    transform: scale(0.98);
+    fill: black;
+}

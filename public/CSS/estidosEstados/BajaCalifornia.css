@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sue+Ellen+Francisco&display=swap');
+*{
+    background-color: #C68883;
+    margin: 0.0875px;
+    box-sizing: border-box; /* Añadir esto para manejar el padding y el border */
+}
+.ContenedorBC{
+    font-family: "Sue Ellen Francisco", cursive;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+}
+.ContenedorBC p{
+    font-size: 1.3rem;
+}
+.ContenedorBC h2{
+    font-size: 1.8rem;
+}
+.ContenedorBC h3{
+    font-size: 1.6rem;
+    font-weight: 1000;
+}

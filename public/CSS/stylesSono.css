@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    margin: 0.0875px;
+    box-sizing: border-box; /* Añadir esto para manejar el padding y el border */
+}
+.Contenedor3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(243, 211, 200);
+    min-width: 270px;
+}
+/*Todo el encabezado*/
+.Encabezado3{
+    z-index: 1;
+    background-color: rgb(194, 101, 212);
+    align-items: center;
+    min-width: 200px;
+    position: fixed;
+    grid-area: 1/1/2/5;
+    width: 100%;
+    opacity: 0.89;
+    display: flex;
+    flex-direction: row;
+    opacity: 500%;
+}
+.Logo{
+    justify-content: center;
+    flex-grow: 0.05;
+}
+.Titulo{
+    justify-content:flex-start;
+    flex-grow: 0.65; 
+}
+#LoudVoice{
+    font-size: 35px;
+    font-family: "Indie Flower", cursive;
+    color:black;  
+}
+.Contacto{
+    display: flex;
+    justify-content:center;
+    flex-grow: 0.15;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 70px;
+}
+.logos button{
+    background-color: rgb(194, 101, 212);
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    scale: 2;
+}
+.logos:hover{
+    transition: 0.3s;
+    transform: scale(0.71);
+}
+.Inicio-Busqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: 0.2;
+}
+.IB{
+    justify-content: center;
+    flex-grow: 0.3;
+}
+#imgInicioSesion{
+    cursor: pointer;
+}
+#imgInicioSesion:active{
+    transition: 0.3s;
+    transform: scale(0.6);
+}
+.BtnAM, .BtnCM{
+    cursor: pointer;
+}
+@media screen and (max-width: 500px){
+    #LoudVoice{
+        scale: 0.85;
+    }
+}
+
+/*Primer panel*/
+.PrimerPanel3{
+    grid-area: 2/1/3/5;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    max-height: 100%;
+    padding-top: 90px;
+}
+.Eslogan31{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding-top: 30px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+#Esl13{
+    max-width: 100%;
+    font-size: 50px;
+    background: linear-gradient(1000deg, #154360, rgba(118, 68, 138), #C0392B );
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    overflow-wrap: break-word;
+}
+#Esl13:hover{
+    background: linear-gradient(100deg, #154360, rgba(118, 68, 138), #C0392B );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+#Esl23{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+}
+.Imagen31{
+    display: flex;
+    max-width: 50%;
+    opacity: 95%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 30px;
+}
+#Sono1{
+    width: 100%;
+    border-radius: 100%;
+}
+@media screen and (max-width: 700px){
+    .PrimerPanel3{
+        flex-wrap: wrap;
+    }
+    .Eslogan31{
+        max-width: 100%;
+    }
+    .Imagen31{
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+/*Segundo panel*/
+.SegundoPanel3{
+    grid-area: 3/1/4/5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    background-color: rgb(232, 209, 243);
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-size: 20px;
+}
+#Titulo32{
+    margin-top: 50px;
+    font-size: 40px;
+}
+.Info31{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+}
+.Infor32{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+#img32{
+    display: block;
+    width: 130px;
+    height: 130px;
+    opacity: 50%;
+}
+#img32:hover{
+    display: block;
+    filter: drop-shadow(2px 2px gold);
+    opacity: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: scale(1.25);
+}
+#img32:active{
+    transform: scale(.3);
+}
+#VoI{
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Tercer panel*/
+.TercerPanel3{
+    grid-area: 4/1/5/5;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: nowrap
+}
+#Titulo33{
+    font-size: 30px;
+    margin-bottom: 20px;
+    animation: blink 1.5s linear infinite;
+    color: rgb(12, 12, 231);
+    max-width: 100%;
+}
+.Imagen33{
+    display: flex;
+    grid-area: 4/1/3/5;
+    max-width: 50%;
+}
+#sono3{
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+    padding: 30px;
+    opacity: 80%;
+    border-radius: 100%;
+    mask-image: linear-gradient(
+        rgb(12, 11, 11) 70%,
+        transparent
+    );
+}
+.Info33{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Merienda", cursive;
+    font-size: 18px;
+    max-width: 50%;
+    margin: 30px;
+}
+@media screen and (max-width: 700px){
+    .TercerPanel3{
+        flex-wrap: wrap;
+    }
+    .Info33{
+        max-width: 100%;
+    }
+    .Imagen33{
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+/*Cuarto panel*/
+.CuartoPanel3{
+    grid-area: 5/1/6/5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Merienda", cursive;
+    text-align: justify;
+}
+.Caja13{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.Caja23{
+    display: flex;
+    margin: 30px;
+}
+.Caja33 h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.Caja33{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 12px;
+    padding: 10px;
+    width: 50%;
+    border-style: solid;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 16px 14px 20px black;
+    overflow-wrap: break-word;
+}
+
+.Caja43 h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.Caja43{
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    padding: 10px;
+    width: 50%;
+    border-style: solid;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 16px 14px 20px black;
+    overflow-wrap: break-word;
+}
+
+
+
+/*Pie de Pagina*/
+.PieDePagina{
+    grid-area: 6/1/7/5;
+    display: flex;
+    background-color: blueviolet;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+.PieDePagina .imgP img {
+    margin-bottom: 15px;
+}
+.Fi p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-weight: 700;
+}
+.EnlacesUtiles a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+.EnlacesUtiles a:hover {
+    text-decoration: underline;
+}
+.PieDePagina p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.PieDePagina strong {
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+}
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .Titulo{
+        flex-grow: 0.25; 
+    }
+    #LoudVoice{
+        scale: 0.85;
+    }
+}
+@media screen and (max-width: 500px){
+    .Titulo{
+        flex-grow: 0; 
+    }
+    #LoudVoice{
+        scale: 0.70;
+        word-break: break-all;
+    }
+    .Logo{
+        flex-wrap: 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .Caja23{
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+
+.tooltip-img {
+    display: none;
+    position: absolute;
+    top: 30px; /* Ajusta según sea necesario */
+    left: 100px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS1{
+    width: 200px;
+    height: 200px;
+}
+.logos button {
+    z-index: 1; /* Asegura que los botones estén debajo de la imagen */
+    position: relative; /* Necesario para que el z-index funcione correctamente */
+}
+.logos{
+    z-index: 1;
+}
+@media (max-width: 800px){
+    .tooltip-img {
+        display: none;
+    }
+    .tooltip-img2 {
+        display: none;
+    }
+}
+.tooltip-img2 {
+    display: none;
+    position: absolute;
+    top: 25px; /* Ajusta según sea necesario */
+    left: 110px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS4{
+    width: 250px;
+    height: 250px;
+}
+
+@media screen and (max-width: 450px) {
+    .Fi p {
+        margin: 4px 0;
+        color: #333;
+        font-size: 1.15rem;
+    }
+    .EnlacesUtiles a {
+        margin: 0 8px;
+        font-size: 1rem;
+    }
+    .PieDePagina p {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+    .PieDePagina strong {
+        font-weight: bold;
+        color: white;
+        font-size: 0.9rem;
+    }
+}

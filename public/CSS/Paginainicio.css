@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&family=SUSE:wght@100..800&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0.0875px;
+    box-sizing: border-box; /* Añadir esto para manejar el padding y el border */
+}
+.Contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+    background-color: #c679b4;
+    min-width: 270px;
+}
+/*Encabezado*/
+.Encabezado{
+    z-index: 1;
+    background-color: #c6798d;
+    align-items: center;
+    min-width: 200px;
+    grid-area: 1/1/2/5;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
+.Encabezado img{
+    padding: 10px;
+    margin: 2px;
+}
+.Encabezado h2{
+    font-size: 1.8rem;
+    font-family: "Edu SA Beginner", cursive;
+    font-optical-sizing: auto;
+}
+.Titulo1{
+    flex-grow: 2;
+}
+.Contacto{
+    padding: 10px;
+    display: flex;
+}
+.Contacto button{
+    margin: 10px;
+    background-color: #c6798d;
+    border-radius: 3px;
+
+}
+@media screen and (max-width: 960px) {
+    .Titulo1{
+        flex-grow: 0.7;
+    }
+}
+@media screen and (max-width: 800px) {
+    .Encabezado img{
+        padding: 5px;
+        margin: 0px;
+    }
+    .Encabezado h2{
+        font-size: 1.6rem;
+        font-family: "Edu SA Beginner", cursive;
+        font-optical-sizing: auto;
+    }
+}
+@media screen and (max-width: 760px) {
+    .Titulo1{
+        flex-grow: 0.6;
+    }
+}
+@media screen and (max-width: 700px) {
+    .Titulo1{
+        flex-grow: 0.4;
+    }
+}
+@media screen and (max-width: 660px) {
+    .Titulo1{
+        flex-grow: 0.3;
+    }
+    .Encabezado h2{
+        font-size: 1.45rem;
+        font-family: "Edu SA Beginner", cursive;
+        font-optical-sizing: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Encabezado{
+        height: 100px;
+    }
+    
+    .Encabezado img{
+        padding: 3px;
+        margin: 0px;
+        width: 140px;
+        height: 70px;
+    }
+    .Encabezado h2{
+        font-size: 1.3rem;
+        font-family: "Edu SA Beginner", cursive;
+        font-optical-sizing: auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .Encabezado{
+        height: 100px;
+    }
+    .Titulo1{
+        flex-grow: 0;
+        width: 200px;
+    }
+    .Encabezado img{
+        padding: 3px;
+        margin: 0px;
+        width: 120px;
+        height: 60px;
+    }
+    .Encabezado h2{
+        font-size: 1.3rem;
+        font-family: "Edu SA Beginner", cursive;
+        font-optical-sizing: auto;
+        text-wrap: wrap;
+    }
+    .Contacto{
+        flex-grow: 2;
+    }
+}
+@media screen and (max-width: 400px) {
+    .Encabezado{
+        height: 100px;
+    }
+    .Titulo1{
+        flex-grow: 0;
+        width: 180px;
+    }
+    .Encabezado img{
+        padding: 3px;
+        margin: 0px;
+        width: 100px;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .Encabezado{
+        height: 100px;
+    }
+    .Titulo1{
+        flex-grow: 0;
+        width: 160px;
+    }
+    .Encabezado img{
+        padding: 3px;
+        margin: 0px;
+        width: 100px;
+        height: 50px;
+    }
+}
+/*Primer panel*/
+.PrimerPanel{
+    grid-area: 2/1/3/5;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: rgb(232, 209, 243);
+    padding: 50px;
+    font-family: "SUSE", sans-serif;
+    mask-image:
+    linear-gradient(
+        to bottom, 
+        transparent,
+        rgb(232, 209, 243) 5%, 
+        rgb(232, 209, 243) 95%, 
+        transparent);
+}
+.Img1{
+    width: 50%;
+}
+.Img1 img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+    padding-right: 30px;
+}
+.Eslogan1{
+    max-width: 50%;
+    padding: 5px;
+}
+.Eslogan1 h3{
+    font-size: 1.7rem;
+}
+.Eslogan1 p{
+    font-size: 1.4rem;
+}
+#BtnEnrutar{
+    font-family: "SUSE", sans-serif;
+    font-size: 1.4rem;
+    height: auto;
+    width: 200px;
+    border-radius: 5PX;
+}
+#BtnEnrutar:hover{
+    cursor: pointer;
+}
+.Boton{
+    background-image: linear-gradient(
+        50deg,
+        #D35400,
+        #AF7AC5 ,
+        #00DDFF
+    );
+    text-decoration: none;
+    color: black
+}
+.Efecto1{
+    display: inline-block;
+    transform: perspective(1px) translate(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+.Efecto1::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #131313;
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+.Efecto1:hover{
+    color: white;
+}
+.Efecto1:hover:before{
+    transform: scaleX(1);
+    transition-timing-function: 
+    cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+@media screen and (max-width: 1180px) {
+    .PrimerPanel{
+        padding-top: 100px;
+    }
+    .Eslogan1 h3{
+        font-size: 1.5rem;
+    }
+    .Eslogan1 p{
+        font-size: 1.2rem;
+    }
+    .Img1 img{
+        max-width: 90%;
+        max-height: 90%;
+        padding: 10px;
+        padding-right: 30px;
+    }
+    #BtnEnrutar{
+        font-family: "SUSE", sans-serif;
+        font-size: 1.2rem;
+        width: 180px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .PrimerPanel{
+        padding-top: 100px;
+    }
+    .Eslogan1 h3{
+        font-size: 1.3rem;
+    }
+    .Eslogan1 p{
+        font-size: 1rem;
+    }
+    #BtnEnrutar{
+        font-family: "SUSE", sans-serif;
+        font-size: 1rem;
+        width: 160px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .PrimerPanel{
+        flex-wrap: wrap-reverse;
+    }
+    .Eslogan1{
+        max-width: 100%;
+    }
+    .Img1{
+        width: 100%;
+    }
+    .Eslogan1 h3{
+        font-size: 1.7rem;
+    }
+    .Eslogan1 p{
+        font-size: 1.4rem;
+    }
+    #BtnEnrutar{
+        font-family: "SUSE", sans-serif;
+        font-size: 1.4rem;
+        width: 180px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .PrimerPanel{
+        flex-wrap: wrap-reverse;
+        margin-top: 50px;
+    }
+    .Eslogan1{
+        max-width: 100%;
+    }
+    .Img1{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .Eslogan1 h3{
+        font-size: 1.5rem;
+    }
+    .Eslogan1 p{
+        font-size: 1.2rem;
+    }
+    #BtnEnrutar{
+        font-family: "SUSE", sans-serif;
+        font-size: 1.2rem;
+        width: 160px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .PrimerPanel{
+        flex-wrap: wrap-reverse;
+        margin-top: 100px;
+        padding: 20px;
+    }
+    .Eslogan1{
+        max-width: 100%;
+    }
+    .Img1{
+        width: 100%;
+    }
+    .Eslogan1 h3{
+        font-size: 1.3rem;
+    }
+    .Eslogan1 p{
+        font-size: 0.9rem;
+    }
+    #BtnEnrutar{
+        font-family: "SUSE", sans-serif;
+        font-size: 0.9rem;
+        width: 160px;
+    }
+    .Img1 img{
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0px;
+        padding-right: 0px;
+    }
+}
+
+/*Segundo panel*/
+.SegundoPanel{
+    grid-area: 3/1/4/5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    font-family: "SUSE", sans-serif;
+}
+.Mision{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+#Img2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    opacity: 90%;
+}
+#Img2 img{
+    width: 60%;
+    height: 70%;
+}
+#Info1{
+    max-width: 50%;
+    padding: 5px;
+    text-align: justify;
+}
+#Info1 h3{
+    font-size: 1.7rem;
+}
+#Info1 p{
+    font-size: 1.4rem;
+}
+.Vision{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(232, 209, 243);
+    mask-image:
+    linear-gradient(
+        to bottom, 
+        transparent,
+        #c679b4 5%, 
+        #c679b4 95%, 
+        transparent);
+}
+#Img3{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    opacity: 90%;
+}
+#Img3 img{
+    width: 60%;
+    height: 70%;
+}
+#Info2{
+    max-width: 50%;
+    padding: 5px;
+    text-align: justify;
+}
+#Info2 h3{
+    font-size: 1.7rem;
+}
+#Info2 p{
+    font-size: 1.4rem;
+}
+
+.Objetivos{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    mask-image:
+    linear-gradient(
+        to bottom, 
+        transparent,
+        #c679b4 5%, 
+        #c679b4 95%, 
+        transparent);
+}
+#Img4{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    opacity: 90%;
+}
+#Img4 img{
+    width: 60%;
+    height: 70%;
+}
+#Info3{
+    max-width: 50%;
+    padding: 5px;
+    text-align: justify;
+}
+#Info3 h3{
+    font-size: 1.7rem;
+}
+#Info3 p{
+    font-size: 1.4rem;
+}
+
+.Valores{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(232, 209, 243);
+    width: 100%;
+    mask-image:
+    linear-gradient(
+        to bottom, 
+        transparent,
+        #c679b4 5%, 
+        #c679b4 95%, 
+        transparent);
+}
+#Img5{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    opacity: 90%;
+}
+#Img5 img{
+    width: 60%;
+    height: 70%;
+}
+#Info4{
+    max-width: 50%;
+    padding: 5px;
+    text-align: justify;
+}
+#Info4 h3{
+    font-size: 1.7rem;
+}
+#Info4 p{
+    font-size: 1.4rem;
+}
+@media screen and (max-width: 900px) {
+    #Info1 h3{
+        font-size: 1.4rem;
+    }
+    #Info1 p{
+        font-size: 1.1rem;
+    }
+    #Info2 h3{
+        font-size: 1.4rem;
+    }
+    #Info2 p{
+        font-size: 1.1rem;
+    }
+    #Info3 h3{
+        font-size: 1.4rem;
+    }
+    #Info3 p{
+        font-size: 1.1rem;
+    }
+    #Info4 h3{
+        font-size: 1.4rem;
+    }
+    #Info4 p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    #Info1 h3{
+        font-size: 1.3rem;
+    }
+    #Info1 p{
+        font-size: 1rem;
+    }
+    #Info2 h3{
+        font-size: 1.3rem;
+    }
+    #Info2 p{
+        font-size: 1rem;
+    }
+    #Info3 h3{
+        font-size: 1.3rem;
+    }
+    #Info3 p{
+        font-size: 1rem;
+    }
+    #Info4 h3{
+        font-size: 1.3rem;
+    }
+    #Info4 p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    #Info1 h3{
+        font-size: 1.2rem;
+    }
+    #Info1 p{
+        font-size: 0.9rem;
+    }
+    #Info2 h3{
+        font-size: 1.2rem;
+    }
+    #Info2 p{
+        font-size: 0.9rem;
+    }
+    #Info3 h3{
+        font-size: 1.2rem;
+    }
+    #Info3 p{
+        font-size: 0.9rem;
+    }
+    #Info4 h3{
+        font-size: 1.2rem;
+    }
+    #Info4 p{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 570px) {
+   .Objetivos{
+    flex-wrap: wrap;
+   }
+   #Info3{
+    max-width: 100%;
+   }
+   #Img4{
+    width: 100%;
+    display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+   }
+   .Valores{
+    padding-top: 30px;
+    flex-wrap: wrap-reverse;
+   }
+   #Info4{
+    max-width: 100%;
+   }
+   #Img5{
+    width: 100%;
+    display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+   }
+}
+@media screen and (max-width: 530px) {
+    .Mision{
+        flex-wrap: wrap-reverse;
+    }
+    #Info1{
+        max-width: 100%;
+    }
+    #Info1 h3{
+        font-size: 1.2rem;
+    }
+    #Info1 p{
+        font-size: 0.85rem;
+    }
+    #Img2{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .Vision{
+        flex-wrap: wrap-reverse;
+    }
+    #Info2{
+        max-width: 100%;
+    }
+    #Info2 h3{
+        font-size: 1.2rem;
+    }
+    #Info2 p{
+        font-size: 0.85rem;
+    }
+    #Img3{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    #Info3 h3{
+        font-size: 1.1rem;
+    }
+    #Info3 p{
+        font-size: 0.8rem;
+    }
+    #Info4 h3{
+        font-size: 1.1rem;
+    }
+    #Info4 p{
+        font-size: 0.8rem;
+    }
+    #InfoT h3{
+        font-size: 1.2rem;
+    }
+    #InfoT p{
+        font-size: 0.9rem;
+    }
+ }
+/*Tercer Panel*/
+.TercerPanel{
+    grid-area: 4/1/5/5;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    align-content:space-between;
+    justify-content: center;
+    font-family: cursive;
+    padding: 30px;
+}
+
+/*Pie de Pagina*/
+.PieDePagina{
+    grid-area: 5/1/6/5;
+    display: flex;
+    background-color: #c6798d;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+.PieDePagina .imgP img {
+    margin-bottom: 15px;
+}
+.Fi p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-weight: 700;
+}
+.EnlacesUtiles a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+.EnlacesUtiles a:hover {
+    text-decoration: underline;
+}
+.PieDePagina p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.PieDePagina strong {
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+}
+@media screen and (max-width: 450px) {
+    .Fi p {
+        margin: 4px 0;
+        color: #333;
+        font-size: 1.15rem;
+    }
+    .EnlacesUtiles a {
+        margin: 0 8px;
+        font-size: 1rem;
+    }
+    .PieDePagina p {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+    .PieDePagina strong {
+        font-weight: bold;
+        color: white;
+        font-size: 0.9rem;
+    }
+}

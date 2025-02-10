@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0.0875px;
+    box-sizing: border-box; /* Añadir esto para manejar el padding y el border */
+}
+
+/*Contenedor principal*/
+.Contenedor4{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+    background-color: rgb(243, 211, 200);
+    min-width: 500px;
+}
+/*Todo el encabezado*/
+.Encabezado4{
+    z-index: 1;
+    background-color: rgb(194, 101, 212);
+    align-items: center;
+    position: fixed;
+    grid-area: 1/1/2/5;
+    width: 100%;
+    opacity: 0.89;
+    display: flex;
+    flex-direction: row;
+    opacity: 500%;
+}
+.Logo{
+    justify-content: center;
+    flex-grow: 0.05;
+}
+.Titulo{
+    justify-content:flex-start;
+    flex-grow: 0.65; 
+}
+#LoudVoice{
+    font-size: 35px;
+    font-family: "Indie Flower", cursive;
+    color:black;  
+}
+.Contacto{
+    display: flex;
+    justify-content:center;
+    flex-grow: 0.15;
+}
+.logos{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 70px;
+}
+.logos button{
+    background-color: rgb(194, 101, 212);
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    scale: 2;
+}
+.PExpand{
+    flex-grow: 0.1;
+}
+.logos:hover{
+    transition: 0.3s;
+    transform: scale(0.71);
+}
+.Inicio-Busqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: 0.2;
+}
+.IB{
+    justify-content: center;
+    flex-grow: 0.3;
+}
+#imgInicioSesion{
+    cursor: pointer;
+}
+#imgInicioSesion:active{
+    transition: 0.3s;
+    transform: scale(0.6);
+}
+@media screen and (max-width: 500px){
+    .imgP{
+        max-width: 50%;
+        max-height: 80%;
+    }
+    .imgP img{
+        width: 100%;
+        height:100%;
+    }
+    #LoudVoice{
+        scale: 0.85;
+    }
+}
+
+/*PrimerPanel4*/
+.PrimerPanel4{
+    grid-area: 2/1/3/5;
+    margin-top: 100px;
+    padding: 35px;
+    background-color: rgb(232, 209, 243);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#Frase14{
+    font-size: 1.1rem;
+    font-family: "Merienda", cursive;
+    margin-top: 90px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#img14{
+    max-width: 40%;
+    max-height: 40%;
+    padding: 30px;
+    opacity: 0.89;
+}
+@media screen and (max-width: 700px){
+    #img14{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+/*Segudno Panel*/
+.SegundoPanel4{
+    grid-area: 3/1/4/5;
+    background-color: rgb(232, 209, 243);
+    font-family: "Gloria Hallelujah", cursive;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.SegundoPanel4 fieldset{
+    border-radius: 8px;
+    max-width: 50%;
+    margin: 5px;
+    border-color: aqua;
+}
+.SegundoPanel4 fieldset legend{
+    font-size: 1.5rem;
+    font-weight: 1000;
+    font-style: oblique;
+}
+.ContenedorC{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.ContenedorC div{
+   margin: 5px;
+   min-width: 100%;
+   text-align: center;
+}
+.ContenedorC div button{
+    background-color: rgb(232, 209, 243);
+    border: none;
+    font-size: 17px;
+    font-family: "Gloria Hallelujah", cursive;
+    color: rgb(159, 124, 124);
+    
+}
+.ContenedorC div button:hover{
+    scale: 1.2;
+    color: rgb(49, 30, 169);
+    border-bottom: solid 2px red; 
+}
+.Texto24{
+    background-color: rgb(4, 4, 8);
+    border: solid 1px rgb(213, 10, 10);
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    text-align: justify;
+    padding: 5px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.AE p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.AE.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.OP p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.OP.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.RA p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.RA.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.PS p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.PS.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+#TC{
+    width: 100%;
+    
+}
+.CE p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.CE.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.CP p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.CP.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.CS p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.CS.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+.CdE p {
+    display: none; /* Ocultar inicialmente el contenido */
+    transition: display 10s ease; /* Transición suave */
+}
+.CdE.mostrar p {
+    display: block; /* Mostrar el contenido cuando la clase mostrar está presente */
+}
+@media screen and (max-width: 700px){
+    .SegundoPanel4{
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .SegundoPanel4 fieldset{
+        border-radius: 8px;
+        max-width: 100%;
+        margin: 5px;
+    }
+}
+/*Tecer Panel*/
+.TercerPanel4{
+    grid-area: 4/1/5/5;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: "Courgette", cursive;
+    text-align: justify;
+    background-color: rgb(102, 211, 211);
+    padding: 5px;
+    padding-right: 15px;
+    border-radius: 15px;
+    border: solid 1px black;
+    box-shadow: 10px 8px 8px black;
+}
+@media screen and (max-width: 500px){
+    .TercerPanel4{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+  
+}
+/*Pie de Pagina*/
+.PieDePagina{
+    grid-area: 5/1/6/5;
+    display: flex;
+    background-color: blueviolet;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+.PieDePagina .imgP img {
+    margin-bottom: 15px;
+}
+.Fi p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 1.3rem;
+    font-style: oblique;
+    font-weight: 700;
+}
+.EnlacesUtiles a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+}
+.EnlacesUtiles a:hover {
+    text-decoration: underline;
+}
+.PieDePagina p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.PieDePagina strong {
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 500px){
+    .Titulo{
+        flex-grow: 0.5; 
+    }
+    .Logo{
+        flex-wrap: 0.3;
+    }
+}
+
+
+.tooltip-img {
+    display: none;
+    position: absolute;
+    top: 30px; /* Ajusta según sea necesario */
+    left: 100px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS1{
+    width: 200px;
+    height: 200px;
+}
+.logos button {
+    z-index: 1; /* Asegura que los botones estén debajo de la imagen */
+    position: relative; /* Necesario para que el z-index funcione correctamente */
+}
+.logos{
+    z-index: 1;
+}
+@media (max-width: 800px){
+    .tooltip-img {
+        display: none;
+    }
+    .tooltip-img2 {
+        display: none;
+    }
+}
+.tooltip-img2 {
+    display: none;
+    position: absolute;
+    top: 25px; /* Ajusta según sea necesario */
+    left: 110px; /* Ajusta según sea necesario */
+    transform: translateX(-50%);
+    z-index: 3;
+    padding: 10px; /* Espaciado opcional */
+}
+#imgS4{
+    width: 250px;
+    height: 250px;
+}
+
+@media screen and (max-width: 450px) {
+    .Fi p {
+        margin: 4px 0;
+        color: #333;
+        font-size: 1.15rem;
+    }
+    .EnlacesUtiles a {
+        margin: 0 8px;
+        font-size: 1rem;
+    }
+    .PieDePagina p {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+    .PieDePagina strong {
+        font-weight: bold;
+        color: white;
+        font-size: 0.9rem;
+    }
+}
