@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Agregar Video</title>
+        <link rel="stylesheet" href="/CSS/Controlador.css">
+        <link rel="stylesheet" href="/CSS/MenuH2.css">
+        <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <div class="ContenedorControler">
+            <nav>
+                <div class="Encabezado">
+                    <div class="Logo">  
+                        <img src="/Img/imagen1.png" alt="logo1" width="100px" height="100px">   
+                    </div>
+                    <div class="TituloB">
+                        <div>
+                            <h1 id="BVS">Formar una comunidad</h1> 
+                        </div>
+                        <div>
+                            <h2 id="NombreUs"></h2> 
+                        </div>  
+                    </div>
+                    <div class="Contacto" id="CH">
+                        <button class="BtnCM" id="CerrarM"><i class="bi bi-x-lg"></i></button>
+                        <button id="Btnvideos">Regresar</button>
+                        <button id="BtnEstadist">Información</button>
+                        <button id="BtnExpediente">Expediente</button>
+                        <button id="logoutButton">Cerrar Sesión</button>        
+                    </div>
+                    <div class="PExpand">
+                        <button class="BtnAM" id="AbrirM"><i class="bi bi-list"></i></button>
+                    </div>
+                </div>   
+            </nav>
+            <div class="PrimerPanelC">
+                <div class="Info1C">
+                    <h2>Es importante ayudar</h2>
+                    <p>Sabemos que tu situación no fue ni es facil de afrontar, nuestra comunidad esta basada en mostrarles a las víctimas 
+                        que (lamnetablemente) no son las unicas que pasaron por algo similar. <br>
+                        Este espacio fue creado un objetivo claro, que si así lo deseas, <b>subas en video relatando tu experiencia</b>, 
+                        sabemos que no es facíl, y que es una decisión que solo tu puedes tomar, es por ello que nada dentro de nuestra 
+                        plataforma te alentara a hacerlo (todo es a tu ritmo). En dado caso que quieras mostrarles a otras personas que
+                        no estan solas en esto, aqui esta este espacio.
+                    </p>
+                </div>
+                <div id="imagenControler">
+                    <img src="/Img/imgContr.png">
+                </div>
+            </div>
+            <div class="SegundoPanelC">
+                    <div class="AutorizacionF">
+                        <h2>Antes de seguir ...</h2>
+                        <p>Para poder subir tu historia, debes primero leer los terminos y condiciones que esto conlleva.</p>
+                        <button id="TerminosCond">Leer términos y condiciones</button>
+                        <div id="DivCondic" class="Terminosycondiciones hidden">
+                            <h3>Términos y condiciones</h3>
+                            <p>Antes de subir tu video experiencia debes ser conciente de:</p>
+                            <ol type="I">
+                                <li><b>Consentimiento para el Uso del Video Al subir tu video:</b> Aceptas que Loudvoice pueda almacenar, 
+                                    mostrar y compartir tu video en la plataforma, así como en otros medios asociados con la aplicación, 
+                                    con el objetivo de apoyar y sensibilizar sobre el acoso y la violencia de género.</li>
+                                <li><b>Responsabilidad Legal Al subir tu video:</b> Aceptas que Loudvoice no se hace responsable por 
+                                    cualquier consecuencia que pudiera derivarse del contenido del video, incluyendo cualquier impacto 
+                                    en tu privacidad o reputación.</li>
+                                <li><b>Modificaciones a los Términos:</b> Loudvoice se reserva el derecho de modificar estos términos y 
+                                    condiciones en cualquier momento. Te notificaremos sobre cualquier cambio relevante.</li>
+                                <li><b>Responsabilidad del Usuario:</b>
+                                    <ol type="i">
+                                        <li><b>Veracidad: </b>Te comprometes a que el contenido de tu video es veraz y refleja tu 
+                                            experiencia personal.</li>
+                                        <li><b>Respeto:</b> Tu video debe ser respetuoso y no contener lenguaje ofensivo, difamatorio o que 
+                                            promueva la violencia.</li>
+                                    </ol>
+                                </li>
+                                <li><b>Recomendaciones para el Video:</b>
+                                    <ol type="i">
+                                        <li><b>Duración: </b>Se recomienda que el video dure de 15 a 25 minutos.</li>
+                                        <li><b>Privacidad: </b>Si prefieres mantener tu identidad anónima, no es necesario mostrar tu rostro 
+                                            ni incluir tu nombre en el título o contenido del video.</li>
+                                        <li><b>Contenido:</b> Asegúrate de que el contenido de tu video esté relacionado con tu 
+                                            experiencia personal y siga las normas de respeto y empatía. Evita compartir información 
+                                            que pueda identificarte o comprometer tu privacidad.</li>
+                                    </ol>
+                                </li>
+                                <li><b>Revocación del Consentimiento:</b> Puedes solicitar en cualquier momento la eliminación de tu video de la plataforma contactando al soporte de Loudvoice. Si decides revocar tu consentimiento, tu video será retirado en un plazo razonable.</li>
+                            </ol>
+                            <p id="AvisoC">He leído y estoy de acuerdo con los terminos y condiciones anteriores <input type="checkbox" 
+                                id="Confirmation"></p>
+                        </div>
+                        <div id="FrmSub" class="FormularioSubir hidden">
+                            <h1>Agregar Nuevo Video</h1>
+                            <form id="formAgregarVideo" enctype="multipart/form-data">
+                                <label for="titulo">Título:</label>
+                                <input type="text" id="titulo" name="titulo" required><br><br>
+                                
+                                <label for="videoFile">Archivo de Video:</label>
+                                <input type="file" id="videoFile" name="videoFile" accept="video/mp4" required><br><br>       
+                                <button id="btnAgregarVideo" type="button">Agregar Video</button>
+                            </form>
+                        
+                            <div id="mensaje"></div>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="PieDePaginaC">
+                <div class="Fi">
+                    <p>Enlaces útiles:</p>
+                    <div class="EnlacesUtiles">
+                        <a href="#">Términos y Condiciones</a> | 
+                        <a href="#">Política de Privacidad</a> | 
+                        <a href="#">Contacto</a> | 
+                        <a href="#">Reportar un problema</a>
+                    </div>
+                    <p>Recuerda... <strong>No estás sol@</strong></p>
+                    <p>&copy; 2024 LOUDVOICE - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+        <script src="/JS/Controlador.js"></script>
+        <script src="/JS/agregar.js"></script>
+        <script src="https://vjs.zencdn.net/7.11.4/video.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="/JS/CerrarS.js"></script>
+        <script src="/JS/MenuHa2.js"></script>
+    </body>
+</html>
+

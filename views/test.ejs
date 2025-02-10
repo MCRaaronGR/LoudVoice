@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Nuestra experiencia</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+            <link rel="stylesheet" href="/CSS/Expediente.css">
+            <link rel="stylesheet" href="/CSS/MenuH2.css">
+        </head>
+        <body>
+            <div class="Contenedor2">
+                <nav>
+                    <div class="EncabezadoI">
+                        <div class="Logo">  
+                            <img src="/Img/imagen1.png" alt="logo1" width="100px" height="100px">   
+                        </div>
+                        <div class="TituloB">
+                            <div>
+                                <h1 id="BVS">Nuestra experiencia</h1> 
+                            </div>
+                            <div>
+                                <h2 id="NombreUs"></h2> 
+                            </div>  
+                        </div>
+                        <div class="Contacto" id="CH">
+                            <button class="BtnCM" id="CerrarM"><i class="bi bi-x-lg"></i></button>
+                            <button id="Btnvideos">Testimonios</button>
+                            <button id="BtnEstadist">Información</button>
+                            <button id="logoutButton">Cerrar Sesión</button>                         
+                        </div>
+                        <div class="PExpand">
+                            <button class="BtnAM" id="AbrirM"><i class="bi bi-list"></i></button>
+                        </div>
+                    </div>      
+                </nav>
+                <div class="Test1">
+                    <div class="MensajeBienvenida">
+                        <h2>¿De que se trata esto?</h2>
+                        <p id="MsjB1">Sabemos que vivir una de las experiencias que aquí se abordan no es facil, además de que solo escuchar
+                            a otras personas que sufrieron situaciones parecidas no abarca todas las maneras de desahogo y recuperacion posibles,
+                            para eso esta este espacio; relatar tu experiencia con tus propias palabras, a tu ritmo, y de la manera y con las palabras
+                            que quieras es una manera de desahogarte de manera mas individual, cómo se menciono en el apartado de "testimonios": 
+                            <b>"Expresar los propios sentimientos y experiencias permite a las víctimas liberar emociones reprimidas, 
+                            lo cual puede disminuir el estrés y la ansiedad"</b>.</p>
+                    </div>
+                    <div class="imagenBienvenida">
+                        <img src="/Img/imgExpe.png" alt="img21">
+                    </div> 
+                </div>
+                <div class="SegundoPanelEx">
+                    <div class="InfoExp">
+                        <h3 id="Titulo2">¿Cómo empezamos?</h3>
+                        <p>Recuerda que todo es a tu ritmo, puedes usar esta función cuando te sientas list@.</p>
+                    </div>
+                    <div class="EspacioExperiencia">
+                        <h3>¿Que debo seleccionar?</h3>
+                        <p>Si aun no has escrito nada, simplemente selecciona "Agregar experiencia" o, si ya tienes una experiencia guardada
+                            y quieres agregar o quitar cosas, selecciona "Editar experiencia", este espacio es tuyo y sea lo que sea que escribas
+                            es bienvenido.</p>
+                        <div class="BtnFuncion">
+                            <button id="btnAgregar" onclick="mostrarTextarea('agregar')">Agregar experiencia</button>
+                            <button id="btnEditar" onclick="mostrarTextarea('editar')">Editar experiencia</button>
+                        </div>
+                        <div id="experienciaDiv" style="display: none;">
+                            <textarea id="experienciaTextarea"></textarea>
+                            <button id="BtnGuardar" onclick="guardarExperiencia()">Guardar Experiencia</button>
+                        </div>  
+                    </div>
+                </div>
+                <div class="TercerPanelExp">
+                    <div class="AyudaExp">
+                        <h3>¿Has pensado en buscar ayuda profesional?</h3>
+                        <p>Afrontar las situaciones que has pasado no es facíl y sabemos que aunque queramos ayudarte de la mejor manera posible
+                            no podemos cubrir todos los aspectos posibles para tu sanación, es por eso que te ofrecemos la posibilidad de <b>descargar</b>
+                            tu expediente, este contiene un resumen de tus resultados del test que contestaste para ingresar a nuestra plataforma, además de 
+                            (si la agregaste), la experiencía que relataste en esta sección, todo esto para que este documento lo entregues al profesional
+                            que quieras acercarte.
+                        </p>
+                    </div>
+                    <div class="ContacANDdesc">
+                        <div class="DescargaExp">
+                            <h3 id="TituloExpe">Descarga tu expediente</h3>
+                            <p>Descarga tu expediente oprimiendo aqui: 
+                                <button class="Boton Efecto1" id="generate-pdf-button">Descargar</button> </p>
+                            <p id="AnexoInfo"><b>Al descargar tu expediente, una copía será enviada de manera automatica a la autoridad universitaría correspondiente
+                                esto solo pasa en la primera descarga.</b>
+                            </p>
+                        </div>
+                        <div class="ContactoExp">
+                            <h3 id="TituloContac">¿A donde puedes acudir?</h3>
+                            <p id="ContacsAyu">Nosotros te recomendamos contactar con los siguientes profesionales, esto en caso de que quieras recibir ayuda
+                                mas profesional y especializada:</p>
+                                <ol type="I">
+                                    <li><address>Psicologo --------- llamar al: <span>55-55-55-55-55</span> para reservar una cita</address></li>
+                                    <li><address>Psicologo --------- llamar al: <span>55-55-55-55-55</span> para reservar una cita</address></li>
+                                    <li><address>Psicologo --------- llamar al: <span>55-55-55-55-55</span> para reservar una cita</address></li>
+                                    <li><address>Psicologo --------- llamar al: <span>55-55-55-55-55</span> para reservar una cita</address></li>
+                                </ol>
+                        </div>
+                    </div>
+ 
+                </div>
+                <div class="PieDePaginaUS">
+                    <div class="Fi">
+                        <p>Enlaces útiles:</p>
+                        <div class="EnlacesUtiles">
+                            <a href="#">Términos y Condiciones</a> | 
+                            <a href="#">Política de Privacidad</a> | 
+                            <a href="#">Contacto</a> | 
+                            <a href="#">Reportar un problema</a>
+                        </div>
+                        <p>Recuerda... <strong>No estás sol@</strong></p>
+                        <p>&copy; 2024 LOUDVOICE - Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="/JS/Expediente.js"></script>
+            <script src="/JS/MenuHa2.js"></script>
+            <script src="/JS/CerrarS.js"></script>
+        </body>
+    </html>

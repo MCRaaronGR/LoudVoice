@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Historias para escuchar</title>
+    <link rel="stylesheet" href="/CSS/TuPagina.css">
+    <link rel="stylesheet" href="/CSS/MenuH2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="ContenedorUS">
+        <nav>
+            <div class="Encabezado">
+                <div class="Logo">  
+                    <img src="/Img/imagen1.png" alt="logo1" width="100px" height="100px">   
+                </div>
+                <div class="TituloB">
+                    <div>
+                        <h1 id="BVS">Bienvenido</h1> 
+                    </div>
+                    <div>
+                        <h2 id="NombreUs"></h2> 
+                    </div>  
+                </div>
+                <div class="Contacto" id="CH">
+                    <button class="BtnCM" id="CerrarM"><i class="bi bi-x-lg"></i></button>
+                    <button id="BtnEstadist">Información</button>
+                    <button id="BtnExpediente">Expediente</button>
+                    <button id="logoutButton">Cerrar Sesión</button>        
+                </div>
+                <div class="PExpand">
+                    <button class="BtnAM" id="AbrirM"><i class="bi bi-list"></i></button>
+                </div>
+            </div>      
+        </nav>
+        <div class="PrimerPanelUS">
+            <h1>Aquí estan las historias, sus historias, cada una relatada con el dolor que representa transmitir la experiencia, 
+                pero; de la misma manera, el espiritu de querer salir adelante.</h1>
+                <main id="main1">
+                    <div class="carousel">
+                        <div class="carousel-inner" id="videos-container">
+                            <!-- Aquí se listarán los videos -->
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-control-prev" id="prevBtn"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                            <button class="carousel-control-next" id="nextBtn"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                        </div>
+                    </div>
+                    <button id="newVideosButton">Nuevos Videos</button> <!-- Botón para nuevos videos -->
+                </main>
+        </div>
+        <div class="SegundoPanelUS">
+            <fieldset>
+                <legend>¿Qué hay aquí?</legend>
+                <div class="TestSup">
+                    <h2>Testimonios Supervivientes</h2>
+                    <br>
+                    <p>En esta sección, podrás encontrar los testimonios de otras víctimas que han decidido compartir sus experiencias con
+                         acoso y violencia de género. Sus relatos son una fuente de inspiración y fortaleza para quienes están pasando por
+                          situaciones similares. Esperamos que estos testimonios te brinden apoyo y te recuerden que no estás sol@.</p>
+                          <br>
+                    <p><b>Recuerda</b></p>
+                    <ol type="i">
+                        <li><b>No estás sol@: </b>Muchas personas han pasado por situaciones similares y han encontrado 
+                            la manera de superarlas.</li>
+                        <li><b>Busca ayuda:</b> No dudes en contactar a profesionales y organizaciones que pueden ofrecerte apoyo 
+                            y orientación.</li>
+                        <li><b>Comparte tu historia:</b> Si te sientes preparad@, compartir tu experiencia puede ser un paso importante hacia 
+                            la sanación y puede ayudar a otros que están pasando por lo mismo.</li>
+                    </ol>
+                    <br>
+                    <p>Te invitamos a ver los videos y, si lo deseas, compartir tu propio testimonio. Juntos, podemos crear una comunidad 
+                        de apoyo y solidaridad.</p>
+                </div>
+                <div class="VocEsp">
+                    <h2>Voces de Esperanza</h2>
+                    <br>
+                    <p>Bienvenida a nuestro espacio de testimonios, donde las voces de quienes han enfrentado acoso y violencia de género 
+                        encuentran un lugar para ser escuchadas. Estos videos son un reflejo de la valentía y resiliencia de cada persona 
+                        que ha decidido compartir su historia con el mundo.</p>
+                        <br>
+                    <p><b>Nuestra misión es: </b></p>
+                    <ol type="i">
+                        <li><b>Empoderar:</b> Cada testimonio es un recordatorio de la fuerza que llevamos dentro y del poder que
+                            tiene nuestra voz.</li>
+                        <li><b>Conectar:</b> Queremos crear una red de apoyo donde todas las personas puedan sentirse comprendidas 
+                            y acompañadas.</li>
+                        <li><b>Inspirar:</b> Esperamos que al escuchar estas historias, encuentres el valor y la esperanza 
+                            para seguir adelante.</li>
+                    </ol>
+                    <br>
+                    <p><b>Sientete libre de: </b></p>
+                    <ol type="i">
+                        <li><b>Explorar:</b> Mira los videos y descubre las historias de otras personas que han encontrado el camino hacia 
+                            la recuperación.</li>
+                        <li><b>Participar:</b> Si te sientes preparad@, tu voz también puede ser una fuente de inspiración. Comparte tu historia y 
+                            ayuda a otras personas a no sentirse solas.</li>
+                    </ol>
+                    <br>
+                    <p>Cada historia importa y junt@s podemos marcar la diferencia. Gracias por ser parte de esta comunidad.</p>
+                </div>
+            </fieldset>
+            <div>
+                <p id="DigPrin">¿Te sientes preparad@ para compartir tu anecdota con los demás? Puedes hacerlo aquí: 
+                    <button id="BtnMas">Comparte tu historia</button></p>
+            </div>
+        </div>
+        <div class="PieDePaginaUS">
+            <img src="/img/imagen1.png" width="200px" height="200px">
+
+
+
+        </div>
+        <div class="PieDePaginaUS">
+            <div class="Fi">
+                <p>Enlaces útiles:</p>
+                <div class="EnlacesUtiles">
+                    <a href="#">Términos y Condiciones</a> | 
+                    <a href="#">Política de Privacidad</a> | 
+                    <a href="#">Contacto</a> | 
+                    <a href="#">Reportar un problema</a>
+                </div>
+                <p>Recuerda... <strong>No estás sol@</strong></p>
+                <p>&copy; 2024 LOUDVOICE - Todos los derechos reservados</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/JS/DatosDn.js"></script>
+    <script src="/JS/VUsuarios.js"></script>
+    <script src="/JS/CerrarS.js"></script>
+    <script src="/JS/MenuHa2.js"></script>
+</body>
+</html>
+
+
+
+
